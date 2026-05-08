@@ -3,288 +3,1112 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- ✅ Judul SEO -->
-  <title>PT Pilingmas Bangun Perkasa - Kontraktor Profesional Batam</title>
 
-  <!-- ✅ Meta SEO dasar -->
-  <meta name="description" content="PT Pilingmas Bangun Perkasa adalah kontraktor profesional di Batam, berpengalaman di pondasi bore pile, konstruksi bangunan, dan solusi infrastruktur.">
-  <meta name="keywords" content="PT Pilingmas Bangun Perkasa, kontraktor Batam, jasa bore pile, konstruksi Batam, piling, pondasi, bangunan, kontraktor Indonesia">
-  <meta name="author" content="PT Pilingmas Bangun Perkasa">
+  <title>PT PILINGMAS BANGUN PERKASA</title>
+  <meta name="description" content="PT Pilingmas Bangun Perkasa - Jasa Pemancangan Profesional di Batam">
 
-  <!-- ✅ Open Graph (biar bagus kalau dishare di WhatsApp / FB) -->
-  <meta property="og:title" content="PT Pilingmas Bangun Perkasa - Kontraktor Profesional Batam">
-  <meta property="og:description" content="Kontraktor berpengalaman di pondasi bore pile dan konstruksi Batam.">
-  <meta property="og:image" content="https://pilingmasperkasa.com/logo.png">
-  <meta property="og:url" content="https://pilingmasperkasa.com/">
-  <meta property="og:type" content="website">
-
-  <!-- ✅ Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PT Pilingmas Bangun Perkasa - Kontraktor Profesional Batam">
-  <meta name="twitter:description" content="Jasa pondasi bore pile dan konstruksi di Batam.">
-  <meta name="twitter:image" content="https://pilingmasperkasa.com/logo.png">
-
-  <!-- ✅ Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
   <style>
-    .about-section {background-color: #f9fafb; /* optional: kasih warna abu2 muda */}
 
-    .about-text {
-      text-align: center;
-      line-height: 1.6;
-      font-size: 1.1rem;}
-
-    body { scroll-behavior: smooth; }
-    /* Hero */
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
-      background-size: cover;
-      background-position: center;
-      height: 70vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .hero-content {
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    
-    .card-text {
-    margin-bottom: 4px;   /* jarak antar paragraf */
-    line-height: 1.2;     /* rapetin jarak antar baris dalam satu paragraf */
+    :root{
+      --navy:#0F2E4D;
+      --blue:#1E6FB8;
+      --light-blue:#4F9FE6;
+      --red:#D62828;
+      --dark:#1F2937;
+      --gray:#6B7280;
+      --light:#F7F9FC;
+      --white:#FFFFFF;
     }
 
-    .fade-out { opacity: 0; transform: translateY(-30px); }
-
-    /* Hover effect card */
-    .service-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .service-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    .text-justify {
-    text-align: justify;
+    html{
+      scroll-behavior:smooth;
     }
 
-    .btn-primary {
-      background-color: #2563eb;
-      border-color: #2563eb;
-      transition: all 0.3s ease;
-    }
-    .btn-primary:hover {
-      background-color: #1e40af;
-      border-color: #1e40af;
-      transform: scale(1.05);
+    body{
+      font-family:'Inter',sans-serif;
+      color:var(--dark);
+      background:var(--white);
+      overflow-x:hidden;
     }
 
-    /* Tombol WhatsApp */
-    .btn-success {
-      background-color: #374151;
-      border-color: #374151;
-      transition: all 0.3s ease;
-    }
-    .btn-success:hover {
-      background-color: #1f2937;
-      border-color: #1f2937;
-      transform: scale(1.05);
+    section{
+      padding:100px 0;
     }
 
-    /* Navbar hover underline */
-    .nav-link {
-      position: relative; transition: color 0.3s ease;
-    }
-    .nav-link::after {
-      content: ''; position: absolute; width: 0%; height: 2px;
-      bottom: 0; left: 0; background-color: #0d6efd;
-      transition: width 0.3s;
-    }
-    .nav-link:hover { color: #0d6efd; }
-    .nav-link:hover::after { width: 100%; }
+    /* =========================
+       NAVBAR
+    ========================= */
 
-    /* Galeri */
-    .gallery img {
-      border-radius: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      width: 100%; height: 220px; object-fit: cover;
+    .navbar{
+      background:rgba(255,255,255,0.88);
+      backdrop-filter:blur(14px);
+      transition:0.3s ease;
+      border-bottom:1px solid rgba(0,0,0,0.05);
     }
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0.8rem 1.5rem rgba(0,0,0,0.3);
+
+    .navbar-brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:800;
+      color:var(--navy)!important;
+      letter-spacing:0.5px;
     }
+
+    .navbar-brand img{
+      width:42px;
+      height:42px;
+      object-fit:contain;
+    }
+
+    .nav-link{
+      color:var(--dark)!important;
+      font-weight:500;
+      position:relative;
+      margin-left:18px;
+    }
+
+    .nav-link::after{
+      content:'';
+      position:absolute;
+      bottom:-5px;
+      left:0;
+      width:0%;
+      height:2px;
+      background:var(--red);
+      transition:0.3s;
+    }
+
+    .nav-link:hover::after{
+      width:100%;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero{
+      min-height:100vh;
+
+      background:
+      linear-gradient(
+      rgba(15,46,77,0.80),
+      rgba(15,46,77,0.80)
+      ),
+      url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1920');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero::before{
+      content:'';
+      position:absolute;
+      width:500px;
+      height:500px;
+      background:rgba(214,40,40,0.12);
+      border-radius:50%;
+      top:-180px;
+      right:-180px;
+      filter:blur(30px);
+    }
+
+    .hero::after{
+      content:'';
+      position:absolute;
+      width:400px;
+      height:400px;
+      background:rgba(79,159,230,0.10);
+      border-radius:50%;
+      bottom:-150px;
+      left:-150px;
+      filter:blur(20px);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      color:white;
+    }
+
+    .hero-badge{
+      display:inline-block;
+      background:rgba(255,255,255,0.1);
+      border:1px solid rgba(255,255,255,0.15);
+      padding:10px 20px;
+      border-radius:999px;
+      margin-bottom:25px;
+      font-size:14px;
+      backdrop-filter:blur(10px);
+    }
+
+    .hero-line{
+      width:90px;
+      height:4px;
+      background:var(--red);
+      border-radius:999px;
+      margin-bottom:30px;
+    }
+
+    .hero h1{
+      font-size:64px;
+      font-weight:800;
+      line-height:1.1;
+      margin-bottom:25px;
+    }
+
+    .hero p{
+      font-size:18px;
+      max-width:700px;
+      color:rgba(255,255,255,0.85);
+      line-height:1.8;
+    }
+
+    .hero-buttons{
+      margin-top:40px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:18px;
+    }
+
+    .btn-main{
+      background:var(--blue);
+      color:white;
+      border:none;
+      padding:15px 34px;
+      border-radius:16px;
+      font-weight:600;
+      transition:0.3s;
+      text-decoration:none;
+    }
+
+    .btn-main:hover{
+      background:var(--light-blue);
+      transform:translateY(-3px);
+    }
+
+    .btn-outline-custom{
+      border:2px solid rgba(255,255,255,0.3);
+      color:white;
+      padding:15px 34px;
+      border-radius:16px;
+      text-decoration:none;
+      transition:0.3s;
+      font-weight:600;
+      backdrop-filter:blur(10px);
+    }
+
+    .btn-outline-custom:hover{
+      background:white;
+      color:var(--navy);
+    }
+
+    /* =========================
+       SECTION TITLE
+    ========================= */
+
+    .section-title{
+      text-align:center;
+      margin-bottom:70px;
+    }
+
+    .section-title h2{
+      font-size:42px;
+      font-weight:800;
+      color:var(--navy);
+      margin-bottom:18px;
+    }
+
+    .section-title p{
+      color:var(--gray);
+      max-width:700px;
+      margin:auto;
+      line-height:1.8;
+    }
+
+    .section-line{
+      width:80px;
+      height:4px;
+      background:var(--red);
+      border-radius:999px;
+      margin:18px auto 0;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-img{
+      border-radius:28px;
+      overflow:hidden;
+      box-shadow:0 25px 50px rgba(0,0,0,0.08);
+    }
+
+    .about-img img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .about-content h3{
+      font-size:38px;
+      font-weight:800;
+      color:var(--navy);
+      margin-bottom:24px;
+    }
+
+    .about-content p{
+      line-height:2;
+      color:var(--gray);
+      text-align:justify;
+    }
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .stats{
+      background:var(--light);
+      position:relative;
+    }
+
+    .stats-card{
+      background:white;
+      border-radius:26px;
+      padding:40px;
+      text-align:center;
+      box-shadow:0 10px 30px rgba(0,0,0,0.05);
+      transition:0.3s;
+      height:100%;
+    }
+
+    .stats-card:hover{
+      transform:translateY(-6px);
+    }
+
+    .stats-card h3{
+      font-size:52px;
+      font-weight:800;
+      color:var(--blue);
+      margin-bottom:10px;
+    }
+
+    .stats-card p{
+      color:var(--gray);
+      margin:0;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .service-card{
+      background:white;
+      border:none;
+      border-radius:28px;
+      padding:40px;
+      height:100%;
+      transition:0.35s;
+      box-shadow:0 10px 30px rgba(0,0,0,0.05);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .service-card::before{
+      content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:5px;
+      background:linear-gradient(to right,var(--blue),var(--red));
+    }
+
+    .service-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 20px 45px rgba(0,0,0,0.08);
+    }
+
+    .service-icon{
+      width:75px;
+      height:75px;
+      border-radius:20px;
+      background:rgba(30,111,184,0.1);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:28px;
+      font-size:34px;
+      color:var(--blue);
+    }
+
+    .service-card h4{
+      font-weight:700;
+      color:var(--navy);
+      margin-bottom:20px;
+    }
+
+    .service-card p{
+      color:var(--gray);
+      line-height:1.9;
+      margin-bottom:0;
+    }
+
+    /* =========================
+       EXPERIENCE
+    ========================= */
+
+    .experience{
+      background:var(--light);
+    }
+
+    .exp-item{
+      background:white;
+      padding:28px;
+      border-radius:20px;
+      margin-bottom:20px;
+      box-shadow:0 5px 18px rgba(0,0,0,0.04);
+      display:flex;
+      gap:20px;
+      align-items:flex-start;
+    }
+
+    .exp-icon{
+      min-width:50px;
+      height:50px;
+      border-radius:14px;
+      background:rgba(214,40,40,0.08);
+      color:var(--red);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:22px;
+    }
+
+    .exp-item p{
+      margin:0;
+      color:var(--gray);
+      line-height:1.8;
+    }
+
+    /* =========================
+       GALLERY
+    ========================= */
+
+    .gallery-item{
+      overflow:hidden;
+      border-radius:24px;
+      position:relative;
+    }
+
+    .gallery-item img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
+      transition:0.4s;
+    }
+
+    .gallery-item:hover img{
+      transform:scale(1.08);
+    }
+
+    /* =========================
+       LEGAL
+    ========================= */
+
+    .legal-card{
+      background:white;
+      padding:40px;
+      border-radius:26px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .legal-item{
+      padding:18px 0;
+      border-bottom:1px solid rgba(0,0,0,0.06);
+    }
+
+    .legal-item:last-child{
+      border:none;
+    }
+
+    .legal-item strong{
+      color:var(--navy);
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact{
+      background:
+      linear-gradient(
+      rgba(15,46,77,0.92),
+      rgba(15,46,77,0.92)
+      ),
+      url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1920');
+
+      background-size:cover;
+      background-position:center;
+      color:white;
+    }
+
+    .contact-box{
+      text-align:center;
+      padding:30px;
+    }
+
+    .contact-icon{
+      width:80px;
+      height:80px;
+      margin:auto auto 20px;
+      border-radius:24px;
+      background:rgba(255,255,255,0.08);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:34px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer{
+      background:#081A2B;
+      color:rgba(255,255,255,0.75);
+      padding:30px 0;
+      border-top:4px solid var(--red);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media(max-width:991px){
+
+      .hero{
+        text-align:center;
+      }
+
+      .hero-line{
+        margin:auto auto 30px;
+      }
+
+      .hero h1{
+        font-size:46px;
+      }
+
+      .hero-buttons{
+        justify-content:center;
+      }
+
+      section{
+        padding:80px 0;
+      }
+
+    }
+
+    @media(max-width:576px){
+
+      .hero h1{
+        font-size:36px;
+      }
+
+      .section-title h2{
+        font-size:32px;
+      }
+
+      .about-content h3{
+        font-size:30px;
+      }
+
+    }
+
   </style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#"> <img src="LOGO PBP.png" alt="Logo PT Pilingmas" width="40" height="40" class="me-2">PT PILINGMAS</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="Logo">
+      PT PILINGMAS
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="nav">
+
+    <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-        <li class="nav-item"><a class="nav-link" href="#legal">Legalitas</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Pengalaman</a></li>
-        <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Tentang</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Layanan</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Pengalaman</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Galeri</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#legal">Legalitas</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Kontak</a>
+        </li>
+
       </ul>
     </div>
+
   </div>
 </nav>
 
-<!-- Hero -->
-<header class="hero text-white">
-  <div class="hero-content" id="heroText" data-aos="fade-up">
-    <h1 class="display-5 fw-bold">PT PILINGMAS BANGUN PERKASA</h1>
-    <p class="lead mt-3">Membangun dengan Kualitas & Kepercayaan</p>
-    <a href="#contact" class="btn btn-primary btn-lg mt-4 shadow-lg">Hubungi Kami</a>
-    <a href="https://wa.me/6285272095918" target="_blank" class="btn btn-success btn-lg mt-4 shadow-lg ms-2">Kontak WhatsApp</a>
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+  <div class="container">
+
+    <div class="hero-content" data-aos="fade-up">
+
+      <div class="hero-badge">
+        Kontraktor Profesional • Batam • Indonesia
+      </div>
+
+      <div class="hero-line"></div>
+
+      <h1>
+        PT PILINGMAS <br>
+        BANGUN PERKASA
+      </h1>
+
+      <p>
+        Perusahaan kontraktor profesional yang bergerak di bidang jasa pemancangan,
+        pembangunan pondasi, dan pengujian konstruksi dengan komitmen terhadap kualitas,
+        keamanan, dan ketepatan pekerjaan.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#contact" class="btn-main">
+          Hubungi Kami
+        </a>
+
+        <a href="https://wa.me/6285272095918" target="_blank" class="btn-outline-custom">
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
   </div>
+
 </header>
 
-<!-- About -->
-<section id="about" class="py-5 about-section">
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
   <div class="container">
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-8" data-aos="fade-up">
-        <h2 class="fw-bold mb-3">Tentang Kami</h2>
-        <p class="about-text">
-          PT PILINGMAS BANGUN PERKASA adalah perusahaan kontraktor profesional yang berlokasi di Kota Batam, Kepulauan Riau. 
-          Dengan pengalaman puluhan tahun, kami berkomitmen menghadirkan kualitas terbaik dalam menyediakan jasa pemancangan 
-          untuk gedung industri, perkantoran, maupun hunian.
-        </p>
+
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6" data-aos="fade-right">
+
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200" alt="">
+        </div>
+
       </div>
+
+      <div class="col-lg-6" data-aos="fade-left">
+
+        <div class="about-content">
+
+          <h3>Tentang Perusahaan</h3>
+
+          <p>
+            PT PILINGMAS BANGUN PERKASA merupakan perusahaan kontraktor profesional
+            yang berlokasi di Kota Batam, Kepulauan Riau.
+            Kami berkomitmen menghadirkan layanan pemancangan berkualitas tinggi
+            dengan standar pekerjaan yang profesional, aman, dan terpercaya.
+          </p>
+
+          <p>
+            Dengan pengalaman dalam berbagai proyek industri, perumahan,
+            perkantoran, hingga fasilitas umum, kami terus mengedepankan
+            kualitas pekerjaan serta kepuasan klien sebagai prioritas utama.
+          </p>
+
+        </div>
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
+<!-- =========================
+     STATS
+========================= -->
 
-<!-- Legalitas -->
-<section id="legal" class="py-5 bg-light">
+<section class="stats">
+
   <div class="container">
-    <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Legalitas & Sertifikasi</h2>
-    <ul class="list-group">
-      <li class="list-group-item">Akta Notaris Pendirian: No. 15, 13 Juli 2015 </li>
-      <li class="list-group-item">Akta Pengesahan Badan Hukum: AHU-2454771.AH.01.01 Tahun 2015</li>
-      <li class="list-group-item">NIB & Izin Usaha Jasa Konstruksi: 9120204401314</li>
-      <li class="list-group-item">NPWP: 738216019215000</li>
-      <li class="list-group-item">SBU Konstruksi:
-        <ul>
-          <li>41013 – Konstruksi Gedung Industri</li>
-          <li>41012 – Konstruksi Gedung Perkantoran</li>
-          <li>41011 – Konstruksi Gedung Hunian</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</section>
 
-<!-- Services -->
-<section id="services" class="py-5">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-5" data-aos="fade-up">Layanan Kami</h2>
     <div class="row g-4">
+
+      <div class="col-md-3" data-aos="zoom-in">
+
+        <div class="stats-card">
+          <h3>10+</h3>
+          <p>Tahun Pengalaman</p>
+        </div>
+
+      </div>
+
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+
+        <div class="stats-card">
+          <h3>100+</h3>
+          <p>Proyek Selesai</p>
+        </div>
+
+      </div>
+
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+
+        <div class="stats-card">
+          <h3>24/7</h3>
+          <p>Professional Support</p>
+        </div>
+
+      </div>
+
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+
+        <div class="stats-card">
+          <h3>100%</h3>
+          <p>Komitmen Kualitas</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+
+      <h2>Layanan Kami</h2>
+
+      <p>
+        Menyediakan layanan konstruksi dan pemancangan profesional
+        dengan dukungan tenaga ahli dan peralatan modern.
+      </p>
+
+      <div class="section-line"></div>
+
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-6" data-aos="fade-up">
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            <i class="bi bi-building"></i>
+          </div>
+
+          <h4>Jasa Pemancangan</h4>
+
+          <p>
+            RC Pile, Spun Pile, Steel Pipe, Sheet Pile,
+            Mini Pile, Bore Pile, Diesel Hammer,
+            Hydraulic Hammer, Vibratory Pile Driver,
+            dan berbagai metode pemancangan profesional lainnya.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="service-card">
+
+          <div class="service-icon">
+            <i class="bi bi-clipboard2-pulse"></i>
+          </div>
+
+          <h4>PDA Test</h4>
+
+          <p>
+            Pengujian kualitas dan kekuatan pondasi menggunakan metode
+            PDA Test profesional untuk memastikan keamanan
+            serta kualitas konstruksi sesuai standar.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section id="experience" class="experience">
+
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+
+      <h2>Pengalaman Proyek</h2>
+
+      <p>
+        Berpengalaman menangani berbagai proyek konstruksi
+        skala kecil hingga besar di berbagai sektor industri.
+      </p>
+
+      <div class="section-line"></div>
+
+    </div>
+
+    <div class="exp-item" data-aos="fade-right">
+      <div class="exp-icon">
+        <i class="bi bi-check-lg"></i>
+      </div>
+      <p>
+        Pembangunan kawasan perumahan, villa,
+        dan hunian modern di berbagai lokasi strategis.
+      </p>
+    </div>
+
+    <div class="exp-item" data-aos="fade-left">
+      <div class="exp-icon">
+        <i class="bi bi-check-lg"></i>
+      </div>
+      <p>
+        Pembangunan ruko, gedung perkantoran,
+        dan pusat bisnis di area komersial.
+      </p>
+    </div>
+
+    <div class="exp-item" data-aos="fade-right">
+      <div class="exp-icon">
+        <i class="bi bi-check-lg"></i>
+      </div>
+      <p>
+        Workshop industri, fasilitas manufaktur,
+        dan pengembangan gedung pabrik skala internasional.
+      </p>
+    </div>
+
+    <div class="exp-item" data-aos="fade-left">
+      <div class="exp-icon">
+        <i class="bi bi-check-lg"></i>
+      </div>
+      <p>
+        Pengujian pondasi dan PDA Test
+        untuk rumah sakit, hotel, dan fasilitas industri.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section id="gallery">
+
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+
+      <h2>Galeri Proyek</h2>
+
+      <p>
+        Dokumentasi beberapa pekerjaan dan proyek
+        yang telah kami tangani.
+      </p>
+
+      <div class="section-line"></div>
+
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="gallery-item">
+          <img src="images/1.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="gallery-item">
+          <img src="images/2.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="gallery-item">
+          <img src="images/3.png" alt="">
+        </div>
+      </div>
+
       <div class="col-md-6" data-aos="zoom-in">
-        <div class="card h-100 shadow service-card">
-          <div class="card-body">
-            <h5 class="card-title">Pemancangan</h5>
-            <p class="card-text">RC Pile, Spun Pile, Steel Pipe, Sheet Pile, Mini Pile, Bor Pile</p>
-            <p class="card-text">Drop Hammer, Diesel Hammer, Hydraulic Hammer, Vibratory Pile Driver, Bore Pile</p>
-          </div>
+        <div class="gallery-item">
+          <img src="images/4.png" alt="">
         </div>
       </div>
-      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
-        <div class="card h-100 shadow service-card">
-          <div class="card-body">
-            <h5 class="card-title">PDA Test</h5>
-            <p class="card-text">Pengujian Kualitas Pemancangan</p>
-          </div>
+
+      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="gallery-item">
+          <img src="images/5.png" alt="">
         </div>
       </div>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- Experience -->
-<section id="experience" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Pengalaman Proyek</h2>
-    <ul class="list-group list-group-flush mb-4">
-      <li class="list-group-item" data-aos="fade-right" data-aos-delay="100">Pembangunan kawasan perumahan & villa di beberapa lokasi strategis.</li>
-      <li class="list-group-item" data-aos="fade-left" data-aos-delay="200">Pembangunan ruko, gedung perkantoran, dan pusat bisnis di berbagai area komersial.</li>
-      <li class="list-group-item" data-aos="fade-right" data-aos-delay="300">Workshop dan fasilitas industri di kawasan manufaktur.</li>
-      <li class="list-group-item" data-aos="fade-left" data-aos-delay="400">Pembangunan gedung perkantoran pendukung untuk perusahaan energi & manufaktur.</li>
-      <li class="list-group-item" data-aos="fade-right" data-aos-delay="500">Pembangunan gedung fasilitas umum termasuk fasilitas pelayanan publik.</li>
-      <li class="list-group-item" data-aos="fade-left" data-aos-delay="600">Ekspansi & pengembangan gedung pabrik elektronik berskala internasional.</li>
-      <li class="list-group-item" data-aos="fade-right" data-aos-delay="700">Pengujian pondasi (PDA test bore pile) untuk gedung rumah sakit, hotel, dan fasilitas industri.</li>
-    </ul>
-  </div>
-</section>
+<!-- =========================
+     LEGAL
+========================= -->
 
+<section id="legal" class="stats">
 
-<!-- Gallery -->
-<section id="gallery" class="py-5">
   <div class="container">
-    <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Galeri</h2>
-    <div class="row g-4 gallery">
-      <div class="col-md-2" data-aos="zoom-in"><img src="1.png" alt=""></div>
-      <div class="col-md-2" data-aos="zoom-in" data-aos-delay="200"><img src="2.png" alt=""></div>
-      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="600"><img src="4.png" alt=""></div>
-      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="800"><img src="5.png" alt=""></div>
+
+    <div class="section-title" data-aos="fade-up">
+
+      <h2>Legalitas & Sertifikasi</h2>
+
+      <p>
+        Perusahaan telah memiliki legalitas resmi
+        dan sertifikasi usaha konstruksi yang lengkap.
+      </p>
+
+      <div class="section-line"></div>
+
     </div>
+
+    <div class="legal-card" data-aos="fade-up">
+
+      <div class="legal-item">
+        <strong>Akta Pendirian:</strong>
+        No. 15, 13 Juli 2015
+      </div>
+
+      <div class="legal-item">
+        <strong>Pengesahan Badan Hukum:</strong>
+        AHU-2454771.AH.01.01 Tahun 2015
+      </div>
+
+      <div class="legal-item">
+        <strong>NIB & IUJK:</strong>
+        9120204401314
+      </div>
+
+      <div class="legal-item">
+        <strong>NPWP:</strong>
+        738216019215000
+      </div>
+
+      <div class="legal-item">
+        <strong>SBU:</strong>
+        41013 – Gedung Industri,
+        41012 – Gedung Perkantoran,
+        41011 – Gedung Hunian
+      </div>
+
+    </div>
+
   </div>
+
 </section>
 
-<!-- Contact -->
-<section id="contact" class="py-5 bg-light">
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="contact">
+
+  <div class="container">
+
+    <div class="section-title text-white" data-aos="fade-up">
+
+      <h2 class="text-white">Hubungi Kami</h2>
+
+      <p class="text-light">
+        Siap membantu kebutuhan proyek konstruksi
+        dan pemancangan profesional Anda.
+      </p>
+
+      <div class="section-line"></div>
+
+    </div>
+
+    <div class="row g-4 mt-3">
+
+      <div class="col-md-4" data-aos="fade-up">
+
+        <div class="contact-box">
+
+          <div class="contact-icon">
+            <i class="bi bi-geo-alt"></i>
+          </div>
+
+          <h5>Alamat</h5>
+
+          <p>
+            Komplek Ruko Bandar Mas Blok A No.09
+            Sungai Panas Batam Kota
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="contact-box">
+
+          <div class="contact-icon">
+            <i class="bi bi-envelope"></i>
+          </div>
+
+          <h5>Email</h5>
+
+          <p>
+            ptpilingmasbangunperkasa@gmail.com
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="contact-box">
+
+          <div class="contact-icon">
+            <i class="bi bi-whatsapp"></i>
+          </div>
+
+          <h5>WhatsApp</h5>
+
+          <p>
+            +62 852-7209-5918
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
   <div class="container text-center">
-    <h2 class="fw-bold mb-3" data-aos="fade-up">Kontak Kami</h2>
-    <p data-aos="fade-up" data-aos-delay="200"><strong>Alamat:</strong> Komplek Ruko Bandar Mas Blok A No.09 Sungai Panas Batam Kota, Kota Batam, Kepulauan Riau</p>
-    <p data-aos="fade-up" data-aos-delay="200"><strong>Email:</strong> ptpilingmasbangunperkasa@gmail.com</p>
-    <p data-aos="fade-up" data-aos-delay="200"><strong>WhatsApp:</strong> +62 852-7209-5918</p>
-  </div>
-</section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-  <p class="mb-0">© 2025 PT PILINGMAS BANGUN PERKASA</p>
+    <p class="mb-0">
+      © 2026 PT PILINGMAS BANGUN PERKASA
+      • All Rights Reserved
+    </p>
+
+  </div>
+
 </footer>
 
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
-  AOS.init({ duration: 1000, once: true });
-  // Fade out hero text saat scroll
-  const heroText = document.getElementById('heroText');
-  window.addEventListener('scroll', () => {
-    let scrollY = window.scrollY;
-    if(scrollY > 100) {
-      heroText.classList.add('fade-out');
-    } else {
-      heroText.classList.remove('fade-out');
-    }
+  AOS.init({
+    duration:1000,
+    once:true
   });
 </script>
+
 </body>
 </html>
-
-
-
-
-
